@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor-main {
+  background-color: hsl(0, 16%, 67%);
+  margin: 0;
+  border: 0;
+  padding: 20px;
+  content: 100%;
+}
+.contenedor-grid {
+  text-align: center;
+  width: 100%;
+  max-width: 1000%;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 0px 3px 4px hsl(0, 35%, 13%);
+}
+
+
+.header {
+  background-color: rgba(22, 22, 22, 0.244);
+  padding: 0.5rem 0 1rem 0;
+
+  display: grid;
+  grid-template-columns: 20% 35%;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor-Fenix-Pintureria {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.titulo {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.nav__item {
+  display: inline;
+  padding: 1rem 1px 0px 0px;
+}
+
+nav {
+  text-align: right;
+  padding: 0;
+}
+.nav__link {
+  color: rgb(5, 4, 4);
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 15px 0 0 0;
+}
+.nav__link:hover {
+  text-decoration: underline;
+  color: rgb(33, 77, 71);
+}
+.contenido-textos p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.contenedor-locales {
+  background-color: hsla(0, 0%, 42%, 0.541);
+  text-align: center;
+  content: 10px;
+  padding: 1.5rem;
+  border: 0;
+  margin: 0px;
+  font-size: 11px;
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 2, 3fr;
+  gap: 1rem;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "local1 local2 local3 ";
+}
+
+.local-1 {
+  grid-area: local1;
+}
+
+.local-2 {
+  grid-area: local2;
+}
+
+.local-3 {
+  grid-area: local3;
+}
+
+.titulo-h1 {
+  color: white;
+  margin: 1rem;
+  font-size: 33px;
+  grid-area: titulo;
+}
+
+/* formulario */
+
+.container__formulario {
+  background-color: hsl(0, 16%, 67%);
+  padding: 20px;
+}
+
+.form-ayuda {
+  width: 400px;
+  padding: 30px 20px 50px 3rem;
+  border: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.controls {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1 solid;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+.form-ayuda a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.form-ayuda a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.form-ayuda-botons {
+  width: 100%;
+  border: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Pinturas */
+
+.container__pinturas {
+  background-color: hsl(0, 16%, 67%);
+}
+
+.container__pinturas h4 {
+  text-align: center;
+}
+
+.container__pinturas p {
+  padding: 15px 15px 15px 15px;
+}
+
+.container__pinturas iframe {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid gray;
+}
+/* Accesorios */
+
+.tittle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container__accesorios {
+  background-color: rgb(143, 183, 201)
+  border: 1rem;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.gallery img {
+  order: -1;
+  align-self: center;
+}
+
+
+
+.tittleaccs {
+  text-align: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.gallery:hover {
+  border: 3px solid rgb(203, 199, 199);
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Marcas */
+
+.container__marcas {
+  background-color: hsl(0, 16%, 67%);
+  
+}
+.container__marcas h1 {
+  text-align: center;
+  padding: 2rem;
+  
+}
+
+.gallery__marcas {
+  margin: 10px;
+  float: none;
+  width: 300px;
+  display: right;
+  padding: 0 1rem 0 1rem;
+}
+
+/* footer */
+
+footer {
+  background-color: gray;
+  padding: 10px 50px 30px 10px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.contacts {
+  text-align: center;
+  color: white;
+  margin: 1rem;
+}
+.contenedor-footer {
+  justify-content: space-evenly;
+  margin: 1.5rem;
+  padding: 10px;
+}
+.content-foot {
+  text-align: center;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+.container-redes {
+  text-align: center;
+}
+.iconos {
+  margin: 20px;
+}
+
+
+/* Media */
+
+@media (min-width: 500px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    nav-left: auto;
+    padding-left: 20px;
+     }
+
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+
+  .contenedor-Fenix-Pintureria {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  .contenedor-locales {
+    background-color: hsla(0, 0%, 42%, 0.541);
+    text-align: center;
+    content: 10px;
+    padding: 1.5rem;
+    border: 0;
+    margin: 0px;
+    font-size: 11px;
+    display: flex;
+  }
+   
+  .titulo-h1 {
+    color: white;
+    margin: 1rem;
+    font-size: 33px;
+      }
+
+
+  /* Pinturas */
+
+.container__pinturas {
+  background-color: hsl(0, 16%, 67%);
+}
+
+.container__pinturas h1 {
+  text-align: center;
+  padding: 20px;
+  ;
+}
+
+.container__pinturas p {
+  padding: 15px 15px 15px 15px;
+}
+
+.container__pinturas iframe {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid gray;
+  
+}    
+
+/* Marcas */
+
+.container__marcas {
+  background-color: hsl(0, 16%, 67%);
+}
+.container__marcas h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery__marcas {
+  margin: 10px;
+  float: none;
+  width: 300px;
+  display: right;
+  padding: 0 1rem 0 1rem;
+  justify-content: space-between;
+}
+  
+}
+
+@media (min-width: 1245px) {
+  .contenedor-grid {
+    text-align: center;
+    width: 100%;
+    max-width: 1000%;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0px 3px 4px hsl(0, 35%, 13%);
+  
+  }
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+
+  .contenedor-Fenix-Pintureria {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    }
+    
+    .contenedor-locales {
+      background-color: hsla(0, 0%, 42%, 0.541);
+      text-align: center;
+      content: 10px;
+      padding: 1.5rem;
+      border: 0;
+      margin: 0px;
+      font-size: 11px;
+      display: grid;
+      grid-template-columns: 3, 1fr;
+      grid-template-rows: 2, 3fr;
+      gap: 1rem;
+      grid-template-areas:
+        "titulo titulo titulo"
+        "local1 local2 local3 ";
+    }
+    
+    .local-1 {
+      grid-area: local1;
+    }
+    
+    .local-2 {
+      grid-area: local2;
+    }
+    
+    .local-3 {
+      grid-area: local3;
+    }
+    
+    .titulo-h1 {
+      color: white;
+      margin: 1rem;
+      font-size: 33px;
+      grid-area: titulo;
+    }
+
+} 
